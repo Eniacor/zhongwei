@@ -1,0 +1,55 @@
+<template>
+	<view>
+		<view class="nickname">
+			<textarea
+				placeholder="请填写您的专业名称～"
+				class="custom_textarea"/>
+			<view class="tip">最多10个字符</view>
+		</view>
+		<view class="btn">保存</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				
+			};
+		}
+	}
+</script>
+
+<style lang="scss">
+.nickname{
+    position: relative;
+    padding:50rpx 35rpx 50rpx 35rpx;
+    background: #fff;
+    .custom_textarea{
+        width: 680rpx!important;
+        height: 200rpx!important;
+        font-size: 30rpx;
+        line-height: 30rpx;
+        color:#707070;
+    }
+    .tip{
+        position: absolute;
+        bottom: 20rpx;
+        right:38rpx;
+        font-size: 24rpx;
+        line-height: 24rpx;
+        color:#999999;
+    }
+}
+.btn{
+    width: 684rpx;
+    height: 82rpx;
+    background: #C3C3C3;
+    color:rgb(51, 51, 51);
+    line-height: 82rpx;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 10rpx;
+    margin-top:60rpx;
+}
+</style>

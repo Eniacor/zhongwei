@@ -12,10 +12,23 @@
 				<button type="default" @click="showMulLinkageThreePicker">三级城市联动</button>
 			</view>
 		</view>
-		<mpvue-picker :themeColor="themeColor" ref="mpvuePicker" :mode="mode" :deepLength="deepLength" :pickerValueDefault="pickerValueDefault"
-		 @onConfirm="onConfirm" @onCancel="onCancel" :pickerValueArray="pickerValueArray"></mpvue-picker>
-		<mpvue-city-picker :themeColor="themeColor" ref="mpvueCityPicker" :pickerValueDefault="cityPickerValueDefault"
-		 @onCancel="onCancel" @onConfirm="onConfirm"></mpvue-city-picker>
+		<mpvue-picker 
+			:themeColor="themeColor" 
+			ref="mpvuePicker" 
+			:mode="mode" 
+			:deepLength="deepLength" 
+			:pickerValueDefault="pickerValueDefault"
+			@onConfirm="onConfirm" 
+			@onCancel="onCancel" 
+			:pickerValueArray="pickerValueArray">
+		</mpvue-picker>
+		<mpvue-city-picker 
+			:themeColor="themeColor" 
+			ref="mpvueCityPicker" 
+			:pickerValueDefault="cityPickerValueDefault"
+			@onCancel="onCancel" 
+			@onConfirm="onConfirm">
+		</mpvue-city-picker>
 	</view>
 </template>
 

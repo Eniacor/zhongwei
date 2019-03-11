@@ -58,7 +58,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:#666;border-left:0;`;
+						styleString = `color:#000;border-left:0;`;
 						break;
 					default:
 						styleString = `color:${this.activeColor};border-color:${this.activeColor};`;
@@ -70,7 +70,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:#000;border-color:${this.activeColor};border-left:0;border-bottom-style:solid;`;
+						styleString = `color:#fff;background:#CE4031;`;
 						break;
 					default:
 						styleString = `color:#fff;border-color:${this.activeColor};background-color:${this.activeColor}`;
@@ -93,39 +93,21 @@
 <style>
 	.segmented-control {
 		display:flex;
+		padding-top:24rpx;
+        padding-left:29rpx;
 		flex-direction: row;
-		justify-content: space-around;
+		flex-wrap:wrap;
 		font-size:30upx;
 		box-sizing: border-box;
-		overflow: hidden;
 	}
-
-	.segmented-control.button {
-		border: 1upx solid;
-	}
-
-	.segmented-control.text {
-		border: 0;
-		border-radius: 0upx;
-	}
-
-
 	.segmented-control-item {
-		line-height:84upx;
+		margin-right:24rpx!important;
+        margin-bottom:21rpx!important;
+		padding: 20upx;
+		font-size: 26upx;
+		line-height: 26upx;
 		box-sizing: border-box;
-	}
-
-	.segmented-control-item.button {
-		border-left: 1upx solid;
-	}
-
-	.segmented-control-item.text {
-		border-left: 0;
-		font-size:30upx;
-		color:#666666;
-	}
-
-	.segmented-control-item:first-child {
-		border-left-width: 0;
+		background: #FBF0EF;
+		border-radius: 8rpx;
 	}
 </style>

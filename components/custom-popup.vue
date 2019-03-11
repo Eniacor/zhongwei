@@ -86,6 +86,15 @@
 		left: 0;
 		bottom: 0;
 		width: 100%;
+	/* 	height: 100upx;
+		line-height: 100upx; */
+		/* text-align: center; */
+	}
+	.uni-popup-left {
+		top:0;
+		right: 0;
+		/* 	height: 100upx;
+		line-height: 100upx; */
+		/* text-align: center; */
 	}
 </style>
-

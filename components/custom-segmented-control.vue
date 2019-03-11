@@ -22,7 +22,7 @@
 			},
 			activeColor: {
 				type: String,
-				default: '#FFD944'
+				default: '#000'
 			},
 			styleType: {
 				type: String,
@@ -58,10 +58,10 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:#666;border-left:0;`;
+						styleString = `color:#707070;border-left:0;`;
 						break;
 					default:
-						styleString = `color:${this.activeColor};border-color:${this.activeColor};`;
+						styleString = `color:${this.activeColor};`;
 						break;
 				}
 				return styleString;
@@ -70,7 +70,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:#000;border-color:${this.activeColor};border-left:0;border-bottom-style:solid;`;
+						styleString = `color:${this.activeColor};border-left:0;`;
 						break;
 					default:
 						styleString = `color:#fff;border-color:${this.activeColor};background-color:${this.activeColor}`;
@@ -92,40 +92,18 @@
 
 <style>
 	.segmented-control {
-		display:flex;
+		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
-		font-size:30upx;
-		box-sizing: border-box;
-		overflow: hidden;
+		justify-content: start;
+		padding:35upx 48upx;
+		background: #fff;
+		border-bottom: 1upx solid #f2f2f2;
 	}
-
-	.segmented-control.button {
-		border: 1upx solid;
-	}
-
-	.segmented-control.text {
-		border: 0;
-		border-radius: 0upx;
-	}
-
-
 	.segmented-control-item {
-		line-height:84upx;
-		box-sizing: border-box;
-	}
-
-	.segmented-control-item.button {
-		border-left: 1upx solid;
-	}
-
-	.segmented-control-item.text {
-		border-left: 0;
-		font-size:30upx;
-		color:#666666;
-	}
-
-	.segmented-control-item:first-child {
-		border-left-width: 0;
+		font-size:34upx;
+		line-height: 34upx;
+	/* 	color: rgb(102,102,102); */
+	color:red;
+		margin-right: 28upx;
 	}
 </style>

@@ -1,64 +1,71 @@
 {
     "pages" : [
         // pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        //         {
+        // 			
+        //             "path" : "pages/tabBar/component/component",
+        //             "style" : {
+        //                 "navigationBarTitleText" : "组件",
+        //                 "app-plus" : {
+        //                     "titleNView" : {
+        //                         "buttons" : [
+        //                             {
+        //                                 "text" : "\ue534",
+        //                                 "fontSrc" : "/static/uni.ttf",
+        //                                 "fontSize" : "22px",
+        //                                 "color" : "#999999"
+        //                             }
+        //                         ]
+        //                     }
+        //                 }
+        //             }
+        //         },
+        //         {
+        //             "path" : "pages/tabBar/API/API",
+        //             "style" : {
+        //                 "navigationBarTitleText" : "接口",
+        //                 "app-plus" : {
+        //                     "titleNView" : {
+        //                         "buttons" : [
+        //                             {
+        //                                 "text" : "\ue534",
+        //                                 "fontSrc" : "/static/uni.ttf",
+        //                                 "fontSize" : "22px",
+        //                                 "color" : "#999999"
+        //                             }
+        //                         ]
+        //                     }
+        //                 }
+        //             }
+        //         },
+        //         {
+        //             "path" : "pages/tabBar/template/template",
+        //             "style" : {
+        //                 "navigationBarTitleText" : "模版",
+        //                 "app-plus" : {
+        //                     "titleNView" : {
+        //                         "buttons" : [
+        //                             {
+        //                                 "text" : "\ue534",
+        //                                 "fontSrc" : "/static/uni.ttf",
+        //                                 "fontSize" : "22px",
+        //                                 "color" : "#999999"
+        //                             }
+        //                         ]
+        //                     }
+        //                 }
+        //             }
+        //         },
+        //         {
+        //             "path" : "pages/component/view/view",
+        //             "style" : {
+        //                 "navigationBarTitleText" : "view"
+        //             }
+        //         },
         {
-            "path" : "pages/tabBar/component/component",
+            "path" : "pages/index/index",
             "style" : {
-                "navigationBarTitleText" : "组件",
-                "app-plus" : {
-                    "titleNView" : {
-                        "buttons" : [
-                            {
-                                "text" : "\ue534",
-                                "fontSrc" : "/static/uni.ttf",
-                                "fontSize" : "22px",
-                                "color" : "#999999"
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "path" : "pages/tabBar/API/API",
-            "style" : {
-                "navigationBarTitleText" : "接口",
-                "app-plus" : {
-                    "titleNView" : {
-                        "buttons" : [
-                            {
-                                "text" : "\ue534",
-                                "fontSrc" : "/static/uni.ttf",
-                                "fontSize" : "22px",
-                                "color" : "#999999"
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "path" : "pages/tabBar/template/template",
-            "style" : {
-                "navigationBarTitleText" : "模版",
-                "app-plus" : {
-                    "titleNView" : {
-                        "buttons" : [
-                            {
-                                "text" : "\ue534",
-                                "fontSrc" : "/static/uni.ttf",
-                                "fontSize" : "22px",
-                                "color" : "#999999"
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "path" : "pages/component/view/view",
-            "style" : {
-                "navigationBarTitleText" : "view"
+                "navigationBarTitleText" : "首页"
             }
         },
         {
@@ -75,10 +82,10 @@
         },
         // #ifndef MP-TOUTIAO
         {
-        	"path": "pages/component/movable-view/movable-view",
-        	"style": {
-        		"navigationBarTitleText": "movable-view"
-        	}
+            "path" : "pages/component/movable-view/movable-view",
+            "style" : {
+                "navigationBarTitleText" : "movable-view"
+            }
         },
         // #endif
         {
@@ -191,26 +198,26 @@
         },
         // #ifndef MP-ALIPAY
         {
-        	"path": "pages/component/video/video",
-        	"style": {
-        		"navigationBarTitleText": "video"
-        	}
+            "path" : "pages/component/video/video",
+            "style" : {
+                "navigationBarTitleText" : "video"
+            }
         },
         // #endif
         // #ifndef MP-ALIPAY || MP-TOUTIAO
         {
-        	"path": "pages/component/audio/audio",
-        	"style": {
-        		"navigationBarTitleText": "audio"
-        	}
+            "path" : "pages/component/audio/audio",
+            "style" : {
+                "navigationBarTitleText" : "audio"
+            }
         },
         // #endif
         // #ifndef MP-TOUTIAO
         {
-        	"path": "pages/component/map/map",
-        	"style": {
-        		"navigationBarTitleText": "map"
-        	}
+            "path" : "pages/component/map/map",
+            "style" : {
+                "navigationBarTitleText" : "map"
+            }
         },
         // #endif
         {
@@ -336,12 +343,12 @@
                 "navigationBarTitleText" : "获取手机系统信息"
             }
         },
-		{
-		    "path" : "pages/API/add-phone-contact/add-phone-contact",
-		    "style" : {
-		        "navigationBarTitleText" : "添加手机联系人"
-		    }
-		},
+        {
+            "path" : "pages/API/add-phone-contact/add-phone-contact",
+            "style" : {
+                "navigationBarTitleText" : "添加手机联系人"
+            }
+        },
         {
             "path" : "pages/API/on-accelerometer-change/on-accelerometer-change",
             "style" : {
@@ -440,10 +447,10 @@
         },
         // #ifndef MP-TOUTIAO
         {
-        	"path": "pages/API/choose-location/choose-location",
-        	"style": {
-        		"navigationBarTitleText": "使用地图选择位置"
-        	}
+            "path" : "pages/API/choose-location/choose-location",
+            "style" : {
+                "navigationBarTitleText" : "使用地图选择位置"
+            }
         },
         // #endif
         {
@@ -490,10 +497,10 @@
         },
         // #ifdef H5 || APP-PLUS
         {
-        	"path": "pages/about/about",
-        	"style": {
-        		"navigationBarTitleText": "关于"
-        	}
+            "path" : "pages/about/about",
+            "style" : {
+                "navigationBarTitleText" : "关于"
+            }
         },
         // #endif
         {
@@ -505,6 +512,264 @@
         {
             "path" : "platforms/app-plus/web-view-local/web-view-local",
             "style" : {}
+        },
+        {
+            "path" : "pages/person/person",
+            "style" : {
+				"navigationBarTitleText" : "个人主页"
+			}
+        },
+        {
+            "path" : "pages/info/info",
+            "style" : {
+				"navigationBarTitleText" : "个人中心"
+			}
+        },
+        {
+            "path" : "pages/nickname/nickname",
+            "style" : {
+                "navigationBarTitleText" : "编辑昵称"
+            }
+        },
+        {
+            "path" : "pages/sex/sex",
+            "style" : {
+                "navigationBarTitleText" : "设置性别"
+            }
+        },
+        {
+            "path" : "pages/email/email",
+            "style" : {
+                "navigationBarTitleText" : "编辑邮箱"
+            }
+        },
+        {
+            "path" : "pages/birthday/birthday",
+            "style" : {
+                "navigationBarTitleText" : "选择出生日期"
+            }
+        },
+        {
+            "path" : "pages/address/address",
+            "style" : {
+                "navigationBarTitleText" : "收获地址"
+            }
+        },
+        {
+            "path" : "pages/address/edit",
+            "style" : {
+                "navigationBarTitleText" : "修改收获地址"
+            }
+        },
+        {
+            "path" : "pages/update/update",
+            "style" : {
+                "navigationBarTitleText" : "检查更新"
+            }
+        },
+        {
+            "path" : "pages/tixian/tixian",
+            "style" : {
+                "navigationBarTitleText" : "提现"
+            }
+        },
+        {
+            "path" : "pages/tixian/success",
+            "style" : {
+                "navigationBarTitleText" : "提现"
+            }
+        },
+        {
+            "path" : "pages/tixian/detail",
+            "style" : {
+                "navigationBarTitleText" : "提现明细"
+            }
+        },
+        {
+            "path" : "pages/service/service",
+            "style" : {
+                "navigationBarTitleText" : "售后服务"
+            }
+        },
+        {
+            "path" : "pages/mypush/mypush",
+            "style" : {
+                "navigationBarTitleText" : "我的发布"
+            }
+        },
+        {
+            "path" : "pages/collect/collect",
+            "style" : {
+                "navigationBarTitleText" : "我的收藏"
+            }
+        },
+        {
+            "path" : "pages/mycard/mycard",
+            "style" : {
+                "navigationBarTitleText" : "我的银行卡"
+            }
+        },
+        {
+            "path" : "pages/mycard/mycard2",
+            "style" : {
+                "navigationBarTitleText" : "我的银行卡"
+            }
+        },
+        {
+            "path" : "pages/mycard/mycard3",
+            "style" : {
+                "navigationBarTitleText" : "我的银行卡"
+            }
+        },
+        {
+            "path" : "pages/mycard/mycard4",
+            "style" : {
+                "navigationBarTitleText" : "我的银行卡"
+            }
+        },
+        {
+            "path" : "pages/setting/setting1",
+            "style" : {
+                "navigationBarTitleText" : "设置"
+            }
+        },
+        {
+            "path" : "pages/setting/setting2",
+            "style" : {
+                "navigationBarTitleText" : "设置"
+            }
+        },
+        {
+            "path" : "pages/setting/setting3",
+            "style" : {
+                "navigationBarTitleText" : "设置"
+            }
+        },
+        {
+            "path" : "pages/author/author1",
+            "style" : {
+                "navigationBarTitleText" : "实名认证"
+            }
+        },
+        {
+            "path" : "pages/author/author2",
+            "style" : {
+                "navigationBarTitleText" : "实名认证"
+            }
+        },
+        {
+            "path" : "pages/password/password",
+            "style" : {
+                "navigationBarTitleText" : "修改密码"
+            }
+        },
+        {
+            "path" : "pages/discount/discount",
+            "style" : {
+                "navigationBarTitleText" : "优惠券"
+            }
+        },
+        {
+            "path" : "pages/order/order",
+            "style" : {
+                "navigationBarTitleText" : "我的订单"
+            }
+        },
+        {
+            "path" : "pages/profession/profession",
+            "style" : {
+                "navigationBarTitleText" : "填写专业"
+            }
+        },
+        {
+            "path" : "pages/discuss/discuss",
+            "style" : {
+                "navigationBarTitleText" : "发布素材"
+            }
+        },
+        {
+            "path" : "pages/post/post",
+            "style" : {
+                "navigationBarTitleText" : "查看物流"
+            }
+        },
+        {
+            "path" : "pages/add/add1",
+            "style" : {
+                "navigationBarTitleText" : "登录"
+            }
+        },
+        {
+            "path" : "pages/add/add2",
+            "style" : {
+                "navigationBarTitleText" : "登录"
+            }
+        },
+        {
+            "path" : "pages/add/add3",
+            "style" : {
+                "navigationBarTitleText" : "注册"
+            }
+        },
+        {
+            "path" : "pages/ping/ping1",
+            "style" : {
+                "navigationBarTitleText" : "邀请拼单"
+            }
+        },
+        {
+            "path" : "pages/ping/ping2",
+            "style" : {
+                "navigationBarTitleText" : "拼单成功"
+            }
+        },
+        {
+            "path" : "pages/detail/detail",
+            "style" : {
+                "navigationBarTitleText" : "订单详情"
+            }
+        },
+        {
+            "path" : "pages/notice/notice",
+            "style" : {
+                "navigationBarTitleText" : "通知"
+            }
+        },
+        {
+            "path" : "pages/match/match",
+            "style" : {
+                "navigationBarTitleText" : "商业匹配"
+            }
+        },
+        {
+            "path" : "pages/confirm/confirm",
+            "style" : {
+                "navigationBarTitleText" : "确认订单"
+            }
+        },
+        {
+            "path" : "pages/giftdetail/giftdetail",
+            "style" : {
+                "navigationBarTitleText" : "商品详情"
+            }
+        },
+        {
+            "path" : "pages/pindetail/pindetail",
+            "style" : {
+                "navigationBarTitleText" : "商品详情"
+            }
+        },
+        {
+            "path" : "pages/jingdetail/jingdetail",
+            "style" : {
+                "navigationBarTitleText" : "商品详情"
+            }
+        },
+        {
+            "path" : "pages/cart/cart",
+            "style" : {
+				"navigationBarTitleText" : "购物车"
+			}
         }
     ],
     "subPackages" : [
@@ -559,10 +824,10 @@
                 },
                 // #ifndef MP-ALIPAY || MP-TOUTIAO
                 {
-                	"path": "echarts/echarts",
-                	"style": {
-                		"navigationBarTitleText": "ECharts图表"
-                	}
+                    "path" : "echarts/echarts",
+                    "style" : {
+                        "navigationBarTitleText" : "ECharts图表"
+                    }
                 },
                 // #endif
                 // #ifdef APP-PLUS || H5 || MP-WEIXIN
@@ -651,81 +916,84 @@
                         }
                     }
                 },
-				{
-				    "path" : "nav-dot/nav-dot",
-				    "style" : {
-						"navigationBarTitleText" : "导航栏带红点和角标",
-						"app-plus": {
-							"titleNView": {
-								"buttons": [ 
-									{
-										"text": "消息", 
-										"fontSize": "14",
-										"redDot": true
-									},
-									{
-										"text": "关注", 
-										"fontSize": "14",
-										"badgeText": "12"
-									}
-								]
-							}
-						}
-					}
-				},
-				{
-				    "path" : "nav-search-input/nav-search-input",
-				    "style" : {
-						"navigationBarTitleText" : "导航栏带搜索框",
-						"app-plus": {
-							"titleNView": {
-								"type": "transparent",
-								"titleColor":"#fff",
-								"backgroundColor":"#007AFF",
-								"buttons": [{
-									"fontSrc": "/static/uni.ttf",
-									"text": "\ue537",
-									"width": "40px",
-									"fontSize": "28px",
-									"color":"#fff",
-									"background": "rgba(0,0,0,0)"
-								
-								}],
-								"searchInput": {
-									"backgroundColor": "#fff",
-									"borderRadius": "6px",
-									"placeholder": "请输入地址 如：大钟寺",
-									"disabled": true
-								}
-							}
-						}
-					}
-				},
-				{
-					"path": "/nav-search-input/detail/detail",
-					"style": {
-						"navigationBarTitleText": "搜索",
-						"app-plus": {
-							"titleNView": {
-								"titleColor":"#fff",
-								"backgroundColor":"#007AFF",
-								"buttons": [{
-									"fontSrc": "/static/uni.ttf",
-									"text": "\ue537",
-									"width": "auto",
-									"fontSize": "28px",
-									"color":"#fff"
-								}],
-								"searchInput": {
-									"backgroundColor": "#fff",
-									"borderRadius": "6px",
-									"placeholder": "请输入地址 如：大钟寺",
-									"autoFocus": true
-								}
-							}
-						}
-					}
-				},
+                {
+                    "path" : "nav-dot/nav-dot",
+                    "style" : {
+                        "navigationBarTitleText" : "导航栏带红点和角标",
+                        "app-plus" : {
+                            "titleNView" : {
+                                "buttons" : [
+                                    {
+                                        "text" : "消息",
+                                        "fontSize" : "14",
+                                        "redDot" : true
+                                    },
+                                    {
+                                        "text" : "关注",
+                                        "fontSize" : "14",
+                                        "badgeText" : "12"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "path" : "nav-search-input/nav-search-input",
+                    "style" : {
+                        "navigationBarTitleText" : "导航栏带搜索框",
+                        "app-plus" : {
+                            "titleNView" : {
+                                "type" : "transparent",
+                                "titleColor" : "#fff",
+                                "backgroundColor" : "#007AFF",
+                                "buttons" : [
+                                    {
+                                        "fontSrc" : "/static/uni.ttf",
+                                        "text" : "\ue537",
+                                        "width" : "40px",
+                                        "fontSize" : "28px",
+                                        "color" : "#fff",
+                                        "background" : "rgba(0,0,0,0)"
+                                    }
+                                ],
+                                "searchInput" : {
+                                    "backgroundColor" : "#fff",
+                                    "borderRadius" : "6px",
+                                    "placeholder" : "请输入地址 如：大钟寺",
+                                    "disabled" : true
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "path" : "/nav-search-input/detail/detail",
+                    "style" : {
+                        "navigationBarTitleText" : "搜索",
+                        "app-plus" : {
+                            "titleNView" : {
+                                "titleColor" : "#fff",
+                                "backgroundColor" : "#007AFF",
+                                "buttons" : [
+                                    {
+                                        "fontSrc" : "/static/uni.ttf",
+                                        "text" : "\ue537",
+                                        "width" : "auto",
+                                        "fontSize" : "28px",
+                                        "color" : "#fff"
+                                    }
+                                ],
+                                "searchInput" : {
+                                    "backgroundColor" : "#fff",
+                                    "borderRadius" : "6px",
+                                    "placeholder" : "请输入地址 如：大钟寺",
+                                    "autoFocus" : true
+                                }
+                            }
+                        }
+                    }
+                },
                 // #endif
                 {
                     "path" : "mpvue-picker/mpvue-picker",
@@ -849,9 +1117,9 @@
                         "app-plus" : {
                             "bounce" : "none"
                         },
-						"mp-alipay": {
-							"allowsBounceVertical": "NO"
-						}
+                        "mp-alipay" : {
+                            "allowsBounceVertical" : "NO"
+                        }
                     }
                 },
                 {
@@ -954,7 +1222,8 @@
                     "style" : {
                         "navigationBarTitleText" : "标签tag"
                     }
-                },{
+                },
+                {
                     "path" : "fab/fab",
                     "style" : {
                         "navigationBarTitleText" : "悬浮按钮 fab"
@@ -986,8 +1255,8 @@
     ],
     "globalStyle" : {
         "navigationBarTextStyle" : "black",
-        "navigationBarTitleText" : "Hello uniapp",
-        "navigationBarBackgroundColor" : "#F8F8F8",
+        "navigationBarTitleText" : "test",
+        "navigationBarBackgroundColor" : "#FFD944",
         "backgroundColor" : "#F8F8F8",
         "mp-alipay" : {
             "titleBarColor" : "#FFFFFF"
@@ -1000,22 +1269,22 @@
         "backgroundColor" : "#F8F8F8",
         "list" : [
             {
-                "pagePath" : "pages/tabBar/component/component",
-                "iconPath" : "static/component.png",
-                "selectedIconPath" : "static/componentHL.png",
-                "text" : "组件"
+                "pagePath" : "pages/index/index",
+                "iconPath" : "static/tab1.png",
+                "selectedIconPath" : "static/tab1a.png",
+                "text" : "首页"
             },
             {
-                "pagePath" : "pages/tabBar/API/API",
-                "iconPath" : "static/api.png",
-                "selectedIconPath" : "static/apiHL.png",
-                "text" : "接口"
+                "pagePath" : "pages/cart/cart",
+                "iconPath" : "static/tab3.png",
+                "selectedIconPath" : "static/tab3a.png",
+                "text" : "购物车"
             },
             {
-                "pagePath" : "pages/tabBar/template/template",
-                "iconPath" : "static/template.png",
-                "selectedIconPath" : "static/templateHL.png",
-                "text" : "模板"
+                "pagePath" : "pages/info/info",
+                "iconPath" : "static/tab2.png",
+                "selectedIconPath" : "static/tab2a.png",
+                "text" : "我的"
             }
         ]
     }
