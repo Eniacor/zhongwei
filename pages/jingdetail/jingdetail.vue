@@ -1,9 +1,10 @@
 <template>
 	<view>
-		<view class="uni-padding-wrap uni-common-mt">
+		<view>
 			<uni-segmented-control 
 				:current="current" 
 				:values="items" 
+				styleType="text"
 				v-on:clickItem="onClickItem" >
 			</uni-segmented-control>
 		</view>
@@ -165,7 +166,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/uni-segmented-control.vue';
+	import uniSegmentedControl from '../../components/uni-segmented-order.vue';
 	import uniButtonControl from '../../components/uni-button-control.vue';
 	import uniPopup from '../../components/uni-popup.vue';
 	import detailBar from '../../components/detail-bar.vue';

@@ -74,24 +74,23 @@
 	}
 
 	.mobile {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		width:606upx;
 		height: 108upx;
 		border-radius: 10upx;
 		border: 1upx solid #E3E4E5;
 		input {
 			float: left;
-			margin-top: 29upx;
 			margin-left:32upx;
 			font-size: 30upx;
 		}
 		.mobile_icon{
 			float: right;
-			margin-top:30upx;
 			margin-right:37upx;
 		}
 		.icon_eye{
-			float: right;
-			margin-top:46upx;
 			margin-right:37upx;
 			width: 40upx;
 			height: 20upx;

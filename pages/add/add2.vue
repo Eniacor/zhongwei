@@ -1,7 +1,7 @@
 <template>
 	<view>
-		<view style="background: #FED943;">
-			<uni-segmented-control :current="current" :values="items" activeColor="#000" v-on:clickItem="onClickItem">
+		<view class="back">
+			<uni-segmented-control :current="current" :values="items" v-on:clickItem="onClickItem" styleType="text" activeColor="#000"></uni-segmented-control>
 			</uni-segmented-control>
 		</view>
 		<view class="content">
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/uni-segmented-control.vue';
+	import uniSegmentedControl from '../../components/uni-segmented-add.vue';
 	export default {
 		data() {
 			return {
@@ -75,6 +75,11 @@
 </script>
 
 <style lang="scss">
+	.back{
+		overflow: hidden;
+		height: auto;
+		background: #FED943;
+	}
 	.contant1{
 		.mobile{
 			width: 550upx;
@@ -92,21 +97,26 @@
 			background: #f2f2f2;
 		}
 		.password{
+			display: flex;
+			justify-content:space-between;
+			align-items: center;    
 			width: 590upx;
 			background: #fff;
 			padding:32upx 54upx;
 			padding-right: 14upx;
 			overflow: hidden;
-			input{
+			.input{
 				float: left;
 				font-size: 22upx;
 			}
 			.btn{
-				float: right;
-				padding:16upx 22upx;
+				float:left;
+				width:164upx;
+				height: 54upx;
 				background: #FFD945;
 				font-size: 22upx;
-				line-height: 22upx;
+				line-height: 54upx;
+				text-align: center;
 			}
 			margin: 0 auto;
 		}

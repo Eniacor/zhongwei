@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="uni-padding-wrap uni-common-mt">
+		<view class="">
 			<uni-segmented-control :current="current" :values="items" v-on:clickItem="onClickItem" :styleType="styleType"
 			 :activeColor="activeColor"></uni-segmented-control>
 		</view>
@@ -109,11 +109,11 @@
 	}
 
 	.content {
-		display: flex;
+	/* 	display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 300upx;
-		text-align: center;
+		text-align: center; */
 	}
 
 	.color-tag {

@@ -1,10 +1,12 @@
 <template>
 	<view>
-		<view class="uni-padding-wrap uni-common-mt">
+		<view>
 			<uni-segmented-control 
 				:current="current" 
 				:values="items" 
+				styleType="text"
 				v-on:clickItem="onClickItem" >
+				
 			</uni-segmented-control>
 		</view>
 		<view class="container">
@@ -165,7 +167,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/uni-segmented-control.vue';
+	import uniSegmentedControl from '../../components/uni-segmented-order.vue';
 	import uniButtonControl from '../../components/uni-button-control.vue';
 	import uniPopup from '../../components/custom-popup.vue';
 	import detailBar from '../../components/detail-bar.vue';
@@ -737,137 +739,138 @@
 		}
 	}
 	.popup_ping {
-		width: 612rpx;
-		height: 500rpx;
+		width: 612upx;
+		height: 500upx;
 		border-radius: 30upx;
 		background: #fff;
 		margin: 0 auto;
 	
 		.ping_delete {
 			text-align: right;
-			padding-top: 28rpx;
-			padding-right: 34rpx;
+			padding-top: 28upx;
+			padding-right: 34upx;
 		}
 	
 		.ping_title {
 			overflow: hidden;
-			font-size: 30rpx;
-			line-height: 30rpx;
+			font-size: 30upx;
+			line-height: 30upx;
 			color: #333;
 			text-align: center;
 		}
 	
 		.ping_des {
-			margin-top: 28rpx;
-			font-size: 24rpx;
-			line-height: 24rpx;
+			margin-top: 28upx;
+			font-size: 24upx;
+			line-height: 24upx;
 			color: #666666;
 			text-align: center;
 		}
 	
 		.ping_img {
-			margin-top: 52rpx;
+			margin-top: 52upx;
 	
 			.img1 {
-				margin-left: 186rpx;
-				width: 94rpx;
-				height: 94rpx;
+				margin-left: 186upx;
+				width: 94upx;
+				height: 94upx;
 			}
 	
 			.img2 {
-				margin-left: 82rpx;
-				width: 94rpx;
-				height: 94rpx;
+				margin-left: 82upx;
+				width: 94upx;
+				height: 94upx;
 			}
 		}
 	
 		.ping_btn {
-			width: 430rpx;
-			height: 64rpx;
+			width: 430upx;
+			height: 64upx;
 			margin: 0 auto;
-			border-radius: 10rpx;
-			font-size: 28rpx;
-			line-height: 64rpx;
+			border-radius: 10upx;
+			font-size: 28upx;
+			line-height: 64upx;
 			text-align: center;
-			margin-top: 64rpx;
+			margin-top: 64upx;
 			background: #FFD944;
 		}
 	
 	}
 	
 	.popup_can {
-		width: 578rpx;
-		height: 772rpx;
+		width: 578upx;
+		height: 772upx;
 		background: #fff;
 		margin: 0 auto;
 		position: relative;
 	
 		.can_title {
-			padding: 37rpx 0;
-			font-size: 30rpx;
-			line-height: 30rpx;
+			padding: 37upx 0;
+			font-size: 30upx;
+			line-height: 30upx;
 			text-align: center;
 			color: #333;
-			border-bottom: 1rpx solid #f2f2f2;
+			border-bottom: 1upx solid #f2f2f2;
 		}
 	
 		.can_delete {
 			position: absolute;
-			top: 25rpx;
-			right: 20rpx;
+			top: 25upx;
+			right: 20upx;
 		}
 	
 		.can_item {
 			overflow: hidden;
-			border-bottom: 1rpx solid #f2f2f2;
+			border-bottom: 1upx solid #f2f2f2;
 	
 			.item_left {
 				float: left;
-				margin-top: 28rpx;
-				margin-left: 26rpx;
+				margin-top: 28upx;
+				margin-left: 26upx;
 	
 				.left_img {
-					width: 74rpx;
-					height: 74rpx;
+					width: 74upx;
+					height: 74upx;
 				}
 			}
 	
 			.item_middle {
 				float: left;
-				margin-left: 17rpx;
+				margin-left: 17upx;
 	
 				.middle_top {
-					margin-top: 30rpx;
-					font-size: 26rpx;
-					line-height: 26rpx;
+					margin-top: 30upx;
+					font-size: 26upx;
+					line-height: 26upx;
 					color: #333;
 	
 					.top_num {
-						margin-left: 15rpx;
+						margin-left: 15upx;
 						color: #666;
 					}
 				}
 	
 				.middle_bottom {
-					margin-top: 18rpx;
-					font-size: 26rpx;
-					line-height: 26rpx;
+					margin-top: 18upx;
+					font-size: 26upx;
+					line-height: 26upx;
 					color: #999;
 				}
 			}
 	
+	
 			.item_right {
 				float: right;
-				margin-top: 33rpx;
-				margin-right: 20rpx;
-				width: 138rpx;
-				height: 62rpx;
-				line-height: 62rpx;
+				margin-top: 33upx;
+				margin-right: 20upx;
+				width: 138upx;
+				height: 62upx;
+				line-height: 62upx;
 				text-align: center;
-				font-size: 26rpx;
+				font-size: 26upx;
 				color: #fff;
 				background: #D41C1C;
-				border-radius: 10rpx;
+				border-radius: 10upx;
 	
 			}
 	

@@ -8,7 +8,7 @@
 
 <script>
 	export default {
-		name: 'uni-segmented-control',
+		name: 'segmented-control',
 		props: {
 			current: {
 				type: Number,
@@ -22,11 +22,11 @@
 			},
 			activeColor: {
 				type: String,
-				default: '#007aff'
+				default: '#FFD944'
 			},
 			styleType: {
 				type: String,
-				default: 'button'
+				default: 'text'
 			}
 		},
 		data() {
@@ -58,7 +58,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:#000;border-left:0;`;
+						styleString = `color:#666;border-left:0;`;
 						break;
 					default:
 						styleString = `color:${this.activeColor};border-color:${this.activeColor};`;
@@ -70,7 +70,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `color:${this.activeColor};border-left:0;border-bottom-style:solid;`;
+						styleString = `color:#000;border-color:${this.activeColor};border-left:0;border-bottom-style:solid;`;
 						break;
 					default:
 						styleString = `color:#fff;border-color:${this.activeColor};background-color:${this.activeColor}`;
@@ -94,51 +94,18 @@
 	.segmented-control {
 		display: flex;
 		justify-content:space-around;
-		align-items: center;    
-		width:100%;
-		height: 82upx;
-		font-size: 30upx;
-	/* 	border-radius: 10upx;
-		box-sizing: border-box; */
-		/* margin: 0 auto; */
-		overflow: hidden;
-		padding: 0!important;
-		margin: 0!important;
-		
+		align-items: center;
+		width:724upx;
+		height:82upx;
+		background: #fff;
 	}
-
-	.segmented-control.button {
-		border: 2upx solid;
-	}
-
-	.segmented-control.text {
-		border: 0;
-		border-radius: 0upx!important;
-	}
-
-
 	.segmented-control-item {
-		/* flex: 1; */
-		text-align: center;
-		line-height: 82upx;
-		box-sizing: border-box;
-		border-radius: 0upx!important;
-		background: transparent!important;
-		/* padding: 0!important;
-		margin: 0!important;
-		margin-top:10upx;
-		padding-top:10upx; */
-	}
-
-	.segmented-control-item.button {
-		border-left: 1upx solid;
-	}
-
-	.segmented-control-item.text {
-		border-left: 0;
-	}
-
-	.segmented-control-item:first-child {
-		border-left-width: 0;
+		display: inline;
+		padding-top:42upx;
+		padding-bottom:18upx;
+		padding-left: 0!important;
+		padding-right: 0!important;
+		font-size: 30upx;
+		line-height: 30upx;
 	}
 </style>

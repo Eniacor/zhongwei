@@ -46,7 +46,7 @@
 				</view>
 			</view>
 		</view> 
-		<view class="uni-padding-wrap uni-common-mt">
+		<view style="margin-left:13upx;">
 			<uni-segmented-control 
 				:current="current" 
 				:values="items" 
@@ -226,7 +226,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/custom-segmented-control.vue';
+	import uniSegmentedControl from '../../components/uni-segmented-index.vue';
 	import uniPopup from '../../components/uni-popup.vue';
 	export default {
 		data() {
@@ -453,12 +453,9 @@
             
         }
     }
-	.uni-padding-wrap{
-		width: 724upx;
-		margin: 0 auto;
-		background: #fff;
-		padding-top:10upx;
-	}
+// 	.uni-padding-wrap{
+// 		margin-left: 13upx;
+// 	}
 	.content {
 		width: 724upx;
         margin: 0 auto;

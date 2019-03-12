@@ -238,7 +238,7 @@
 	.header_bottom{
 		margin-top:30upx;
 		width: 750upx;
-		height: 96upx;
+		height:100upx;
 		background: #fff;
 		border-top-left-radius:200upx;
 		border-top-right-radius:200upx;
@@ -262,7 +262,6 @@
 				margin-top:12upx;
 				.bottom_balance{
 					font-size: 24upx;
-				
 					color: rgb(40, 40, 40);
 				}
 				.bottom_money{
@@ -274,7 +273,6 @@
 					background: #FF9265;
 					margin-left: 14upx;
 				}
-				
 			}
 		}
 	}
