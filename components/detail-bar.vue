@@ -65,16 +65,14 @@
 				.shop_img{
 					width:40upx;
 					height:42upx;
-					vertical-align: bottom;
-					margin-top: 22upx;
-					margin-left:20upx;
+					margin-top: -16upx;
+					margin-left:14upx;
 				}
 				.shop_title{
 					font-size:16upx;
 					line-height:16upx;
 					color: rgb(159,159,159);
-					-webkit-transform:scale(.7);
-					margin-top: 2upx;
+					margin-top: -12upx;
 					margin-left:16upx;
 				}
 			}
@@ -85,15 +83,14 @@
 					width:42upx;
 					height:44upx;
 					vertical-align: bottom;
-					margin-top: 22upx;
-					margin-left:22upx;
+					margin-top: 26upx;
+					margin-left:14upx;
 				}
 				.cart_title{
 					font-size:14upx;
 					line-height:12upx;
-					color: rgb(51,51,51);
-					-webkit-transform:scale(0.7);
-					margin-top: 2upx;
+					color: rgb(159,159,159);
+					margin-top: 4upx;
 					margin-left:11upx;
 				}
 				.cart_tag{
@@ -135,7 +132,6 @@
 				font-size:14upx;
 				line-height:12upx;
 				color: rgb(51,51,51);
-				-webkit-transform:scale(0.7)
 			}
 		}
 		.right{
@@ -156,7 +152,6 @@
 				font-size:14upx;
 				line-height:12upx;
 				color: #fff;
-				-webkit-transform:scale(0.7)
 			}
 		}
 	}

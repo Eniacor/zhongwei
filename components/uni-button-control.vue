@@ -1,6 +1,6 @@
 <template>
-	<view class="segmented-control" :class="styleType" :style="wrapStyle">
-		<view v-for="(item, index) in values" class="segmented-control-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
+	<view class="button-control" :class="styleType" :style="wrapStyle">
+		<view v-for="(item, index) in values" class="button-control-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
 			{{item}}
 		</view>
 	</view>
@@ -73,7 +73,7 @@
 						styleString = `color:#fff;background:#CE4031;`;
 						break;
 					default:
-						styleString = `color:#fff;border-color:${this.activeColor};background-color:${this.activeColor}`;
+						styleString = `color:#fff;border-color:#CE4031;background:#CE4031;`;
 						break;
 				}
 				return styleString;
@@ -91,7 +91,23 @@
 </script>
 
 <style>
-	.segmented-control {
+	.button-control {
+		display: flex;
+		justify-content:space-around;
+		align-items: center;     /* 垂直居中 */
+		width:100%;
+		height:82upx;
+		border: 1px solid red;
+	}
+	.button-control-item {
+		display: inline;
+		padding:26upx 0;
+		border-bottom: 1upx solid #007AFF;
+		background-color: red;
+		font-size: 30upx;
+		line-height: 30upx;
+	}
+	/* .segmented-control {
 		display:flex;
 		padding-top:24rpx;
         padding-left:29rpx;
@@ -101,13 +117,13 @@
 		box-sizing: border-box;
 	}
 	.segmented-control-item {
-		margin-right:24rpx!important;
-        margin-bottom:21rpx!important;
+		margin-right:24upx;
+        margin-bottom:21upx;
 		padding: 20upx;
 		font-size: 26upx;
 		line-height: 26upx;
 		box-sizing: border-box;
 		background: #FBF0EF;
 		border-radius: 8rpx;
-	}
+	} */
 </style>

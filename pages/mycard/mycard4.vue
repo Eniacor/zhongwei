@@ -107,19 +107,18 @@
 		color:rgb(102,102,102);
 	}
 	.form{
-		overflow: hidden;
+		display: flex;
 		width: 100%;
 		height: 106upx;
 		background: #fff;
 		.form_lable{
 			margin-top:39upx;
 			margin-left:32upx;
-			float: left;
 			font-size: 28upx;
 			line-height:28upx;
+			width: 88upx;
 		}
 		.form_value{
-			float: left;
 			font-size: 28upx;
 			margin-top:25upx;
 			margin-left:38upx;

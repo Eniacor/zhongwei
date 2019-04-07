@@ -89,7 +89,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/uni-segmented-control.vue';
+	import uniSegmentedControl from '../../components/uni-segmented-order.vue';
 	export default {
 		data() {
 			return {

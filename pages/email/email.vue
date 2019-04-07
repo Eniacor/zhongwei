@@ -27,7 +27,7 @@
     color:#A3A3A3;
     .top_input{
         margin-top:60rpx;
-        width: 686rpx;
+        width: 654rpx;
         height: 72rpx;
         border-radius: 20rpx;
         background:#F1F1F1; 

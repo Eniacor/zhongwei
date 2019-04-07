@@ -59,7 +59,7 @@
 		border-radius: 50%;
 		background: #fff;
 		margin: 0 auto;
-		margin-top: 270upx;
+		margin-top: 160upx;
 		margin-bottom: 128upx;
 		border: 1upx solid #EFEFF0;
 

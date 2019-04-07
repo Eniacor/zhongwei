@@ -148,7 +148,7 @@
 			}
 		}
 		.other{
-			margin-top:502upx;
+			margin-top:380upx;
 			font-size: 24upx;
 			line-height: 24upx;
 			text-align: center;
@@ -163,7 +163,7 @@
 					float: left;
 					width: 24upx;
 					height: 28upx;
-					margin-left: 97upx;
+					margin-left: 120upx;
 				}
 				.wechat{
 					float: left;

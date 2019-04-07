@@ -94,22 +94,20 @@
 .password2{
 	padding:35upx 26upx 35upx 24upx;
 	background: #fff;
-	overflow: hidden;
+	display: flex;
 	.left_txt{
-		float:left;
 	    font-size:30upx;
 	    line-height:30upx;
 	    color: rgb(38,38,38);
 		margin-top:10upx;
+		width:320upx;
 	}
 	.middle_input{
-		float: left;
 		text-align: right;
 		font-size:30upx;
-		margin-left:115upx;
+		margin-right:15upx;
 	}
 	.right_img{
-	    float: right;
 	    margin-top:16upx;
 	    width:40upx;
 	    height: 20upx;

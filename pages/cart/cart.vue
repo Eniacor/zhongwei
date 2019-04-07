@@ -210,85 +210,85 @@
 		.good_content {
 			z-index:1; 
 			width:100%;
-			height:257rpx;
+			height:257upx;
 			background-color:#fff;
 			.checkbox {
 				float: left;
-				width: 38rpx;
-				height: 38rpx;
-				margin-left:30rpx;
-				margin-right: 14rpx;
-				margin-top:110rpx;
+				width: 38upx;
+				height: 38upx;
+				margin-left:30upx;
+				margin-right: 14upx;
+				margin-top:110upx;
 			}
 			.good_img {
 				float:left;
-				margin-top:39rpx;
-				width: 179rpx;
-				height:179rpx;
+				margin-top:39upx;
+				width: 179upx;
+				height:179upx;
 				background: #8E8E93;
 			}
 			.right{
 				position: relative;
 				float: left;
-				margin-left:12rpx;
+				margin-left:12upx;
 				.right_title{
-					width: 426rpx;
-					margin-top:26rpx;
-					font-size: 26rpx;
-					line-height: 26rpx;
+					width: 426upx;
+					margin-top:26upx;
+					font-size: 26upx;
+					line-height: 26upx;
 					color:#333;
 				}
 				.right_des{
-					width: 426rpx;
-					margin-top:25rpx;
-					font-size: 24rpx;
-					line-height: 24rpx;
+					width: 426upx;
+					margin-top:25upx;
+					font-size: 24upx;
+					line-height: 24upx;
 					color:#A7A7A7;
 				}
 				.right_account{
-					width: 426rpx;
-					margin-top:36rpx;
-					font-size: 26rpx;
-					line-height: 26rpx;
+					width: 426upx;
+					margin-top:36upx;
+					font-size: 26upx;
+					line-height: 26upx;
 					color:#FF000D;
 				}
 				.right_price{
-					width: 426rpx;
-					margin-top:26rpx;
-					font-size: 26rpx;
-					line-height: 26rpx;
+					width: 426upx;
+					margin-top:26upx;
+					font-size: 26upx;
+					line-height: 26upx;
 					color:#FF000D;
 				}
 				.stepper {
 					position: absolute;
-					top:144rpx;
-					right:32rpx;
+					top:144upx;
+					right:32upx;
 					overflow: hidden;
-					margin-top: 10rpx;
+					margin-top: 10upx;
 					width: 50%;
-					margin-left: 70rpx;
+					margin-left: 70upx;
 					.add,.subtract{
 						float: left;
-						width: 64rpx;
-						height:64rpx;
-						line-height:64rpx;
+						width: 64upx;
+						height:64upx;
+						line-height:64upx;
 						text-align: center;
-						font-size: 30rpx;
+						font-size: 30upx;
 						border: 1px solid #ccc;
 						box-sizing: border-box;
 						color:#333;
 					}
 					.count {
 						float: left;
-						width: 64rpx;
-						height:64rpx;
-						line-height:64rpx;
+						width: 64upx;
+						height:64upx;
+						line-height:64upx;
 						border-top: 1px solid #ccc;
 						border-bottom: 1px solid #ccc;
 						text-align: center;
 						box-sizing: border-box;
 						min-height: 1rem;
-						font-size: 28rpx;
+						font-size: 28upx;
 					}
 					.disabled {
 						float: left;
@@ -297,10 +297,10 @@
 				} 
 				.delete{
 					position: absolute;
-					top:168rpx;
-					right:-11rpx;        
-					width: 34rpx;
-					height: 34rpx;
+					top:168upx;
+					right:-11upx;        
+					width: 34upx;
+					height: 34upx;
 				}
 			}
 		}
@@ -310,7 +310,7 @@
 		flex-direction: row;
 		align-items: center;
 		width: 100%;
-		height: 100rpx;
+		height: 100upx;
 		margin-bottom: 0;
 		background-color: #fff;
 		box-sizing: border-box;
@@ -318,9 +318,9 @@
 	}
   
   .section-bottom .btn {
-		width: 160rpx;
-		height: 100rpx;
-		line-height: 100rpx;
+		width: 160upx;
+		height: 100upx;
+		line-height: 100upx;
 		text-align: center;
 		color: #fdfffd;
 		background-color: #fbb304;
@@ -338,7 +338,7 @@
   
   .section-bottom .checkbox-allcheck {
     display: inline-block;
-    margin-left: 30rpx;
+    margin-left: 30upx;
     vertical-align: top;
     font-size: 0px;
   }
@@ -346,28 +346,28 @@
   .section-bottom .check-all-text {
     display: inline-block;
     vertical-align: top;
-    margin-left: 10rpx;
+    margin-left: 10upx;
     height: 23px;
     line-height: 23px;
-    font-size: 28rpx;
+    font-size: 28upx;
   }
   
   .section-bottom .total {
     flex: 1;
     text-align: center;
-    font-size: 26rpx;
+    font-size: 26upx;
   }
   
   .total .totalCount {
-    font-size: 26rpx;
+    font-size: 26upx;
     display: inline-block;
     vertical-align: middle;
   }
   
   .total .totalPrice {
     display: inline-block;
-    font-size: 26rpx;
-    margin-left: 20rpx;
+    font-size: 26upx;
+    margin-left: 20upx;
     vertical-align: middle;
   }
   
@@ -378,7 +378,7 @@
   
   .total .totalPrice text {
     color: #e4452a;
-    font-size: 36rpx;
+    font-size: 36upx;
     vertical-align: middle;
   }
   
@@ -402,32 +402,35 @@
 .bottom{
   position: fixed;
   bottom: 0;
-  width: 750rpx;
-  line-height:100rpx;
+  width: 750upx;
+  line-height:100upx;
   background: #fff;
-  border-top:1rpx solid #f2f2f2;
-  font-size: 30rpx;
+  border-top:1upx solid #f2f2f2;
+  font-size: 30upx;
   color: #333;
   z-index:100; 
   .total{
     float: left;
     text-align:center;
-    width: 249rpx;
-    height: 100rpx;
-    border-right: 1rpx solid #f2f2f2;
+    width: 249upx;
+    height: 100upx;
+	line-height: 100upx;
+    border-right: 1upx solid #f2f2f2;
   }
   .go{
     float: left;
     text-align:center;
-    width: 249rpx;
-    height: 100rpx;
-    border-right: 1rpx solid #f2f2f2;
+	line-height: 100upx;
+    width: 249upx;
+    height: 100upx;
+    border-right: 1upx solid #f2f2f2;
   }
   .btn{
     float: left;
     text-align:center;
-    width: 250rpx;
-    height: 100rpx;
+    width: 250upx;
+    height: 100upx;
+	line-height: 100upx;
     background: #FF000D;
     color:#fff;
   }
