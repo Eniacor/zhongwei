@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view style="margin-bottom: 100upx;">
 		<view class="type" @click="onPostPopup">
 			<text class="type_left">我的发布</text>
 			<image class="type_right" src="/static/my.png"></image>
@@ -139,6 +139,10 @@
 	import uniIcon from '../../components/uni-icon.vue';
 	import uniPopup from '../../components/custom-popup.vue';
 	export default {
+		components: {
+			uniIcon,
+			uniPopup
+		},
 		data() {
 			return {
 				showPopupPost:false,
@@ -158,10 +162,7 @@
 				this.showPopupPayment = false;
 			},
 		},
-		components: {
-			uniIcon,
-			uniPopup
-		},
+		
 	}
 </script>
 
@@ -409,7 +410,7 @@
 			font-size: 30rpx;
 			line-height: 30rpx;
 			color: rgb(51, 51, 51);
-
+			
 			.total_count {
 				float: right;
 
@@ -432,7 +433,7 @@
 		position: fixed;
 		bottom: 0;
 		overflow: hidden;
-
+		border-top:1upx solid #eee;
 		.bottom_left {
 			float: left;
 			width: 320rpx;

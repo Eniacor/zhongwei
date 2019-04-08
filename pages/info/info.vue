@@ -8,9 +8,9 @@
 					<view class="user_nick">
 						<view class="nick_name">柏林</view>
 						<view class="nick_tag">
-						<!-- 	<text class="tag">举人</text>
+							<text class="tag">举人</text>
 							<text class="tag">品类3</text>
-							<text class="tag">社群5</text> -->
+							<text class="tag">社群5</text>
 						</view>
 					</view>
 					<view class="user_info">
@@ -188,17 +188,17 @@
 				color: rgb(40, 40, 40);
 			}
 			.nick_tag{
-				margin-top:8upx;
-				height: 24upx;
-				line-height: 24upx;
+				display: flex;
+				margin-top: 4upx;
+				align-items: center;
 				.tag{
-					display: inline-block;
-					padding:3upx 12upx;
-					font-size: 18upx;
-					line-height: 18upx;
+					display: inline;
+					padding: 3upx 12upx;
+					font-size: 20upx;
+					line-height: 20upx;
 					background: #fff;
 					border-radius: 30upx;
-					margin-right:10upx;
+					margin-right: 10upx;
 				}
 			}
 		   
@@ -248,7 +248,7 @@
 			height: 96upx;
 			text-align: center;
 			.item_top{
-				font-size: 12upx;
+				font-size: 24upx;
 				line-height: 30upx;
 				margin-top:30upx;
 				color: rgb(40, 40, 40);

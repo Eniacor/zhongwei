@@ -91,23 +91,7 @@
 </script>
 
 <style>
-	.button-control {
-		display: flex;
-		justify-content:space-around;
-		align-items: center;     /* 垂直居中 */
-		width:100%;
-		height:82upx;
-		border: 1px solid red;
-	}
-	.button-control-item {
-		display: inline;
-		padding:26upx 0;
-		border-bottom: 1upx solid #007AFF;
-		background-color: red;
-		font-size: 30upx;
-		line-height: 30upx;
-	}
-	/* .segmented-control {
+	 .button-control {
 		display:flex;
 		padding-top:24rpx;
         padding-left:29rpx;
@@ -116,7 +100,8 @@
 		font-size:30upx;
 		box-sizing: border-box;
 	}
-	.segmented-control-item {
+	.button-control-item {
+		display: inline;
 		margin-right:24upx;
         margin-bottom:21upx;
 		padding: 20upx;
@@ -125,5 +110,5 @@
 		box-sizing: border-box;
 		background: #FBF0EF;
 		border-radius: 8rpx;
-	} */
+	}
 </style>

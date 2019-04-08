@@ -31,13 +31,13 @@
 <script>
 	import uniIcon from '../../components/uni-icon.vue'
 	export default {
+		components: {
+		    uniIcon
+		},
 		data() {
 			return {
 			
 			};
-		},
-		components: {
-		    uniIcon
 		},
 	}
 </script>

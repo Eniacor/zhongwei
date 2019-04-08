@@ -7,15 +7,33 @@
 		<view class="container">
 			<view v-show="current === 0">
 				<view class="content">
-					<swiper class="slide_swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
+					<swiper class="slide_swiper" :autoplay="autoplay" :interval="interval" :duration="duration">
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">1/3</view>
+							</view>
 						</swiper-item>
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">2/3</view>
+							</view>
 						</swiper-item>
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">3/3</view>
+							</view>
 						</swiper-item>
 					</swiper>
 					<view class="des">
@@ -291,10 +309,32 @@
 				width: 750upx;
 				height: 734upx;
 
-				.slide_image {
-					width: 750upx;
-					height: 734upx;
-					background: #333;
+				 .info{
+					text-align: right;
+					margin-top: 650upx;
+					vertical-align: middle;
+					.collect{
+						display: inline;
+						margin-right: 20upx;
+						border-radius: 30upx;
+						padding:10upx 16upx;
+						background: rgba($color: #000000, $alpha: .3);
+						.collect_txt{
+							font-size: 24upx;
+							line-height: 24upx;
+							color: #fff;
+						}
+					}
+					.page{
+						display: inline;
+						margin-right: 50upx;
+						border-radius: 30upx;
+						padding:12upx 30upx;
+						background: rgba($color: #000000, $alpha: .3);
+						font-size: 24upx;
+						line-height: 24upx;
+						color: #fff;
+					}
 				}
 			}
 
@@ -326,11 +366,9 @@
 					border-radius: 4rpx;
 					color: rgb(255, 0, 13);
 					line-height: 18upx;
-
 					.post_txt {
 						display: inline-block;
-						font-size: 18rpx;
-						-webkit-transform: scale(0.8)
+						font-size: 20rpx;
 					}
 
 				}

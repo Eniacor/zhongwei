@@ -13,18 +13,36 @@
 				<view class="content">
 					<swiper
 						class="slide_swiper"
-						:indicator-dots="indicatorDots"
+				
 						:autoplay="autoplay"
 						:interval="interval"
 						:duration="duration">
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">3/3</view>
+							</view>
 						</swiper-item>
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">3/3</view>
+							</view>
 						</swiper-item>
 						<swiper-item>
-							<image src="" class="slide_image" width="355" height="150" />
+							<view class="info">
+								<view class="collect">
+									<uni-icon size="16" type="star" color="#fff"></uni-icon>
+									<text class="collect_txt">收藏</text>
+								</view>
+								<view class="page">3/3</view>
+							</view>
 						</swiper-item>
 					</swiper>
 					<view class="des">
@@ -155,9 +173,9 @@
 							<uni-number-box></uni-number-box>
 						</view>
 					</view>
-					<view class="bottoms">
-						<view class="bottoms_cart">加入购物车</view>
-						<view class="bottoms_buy">确定</view>
+					<view class="bottomss">
+						<view class="bottomss_cart">加入购物车</view>
+						<view class="bottomss_buy">确定</view>
 					</view> 
 				</view>
 			</uni-popup>
@@ -172,6 +190,13 @@
 	import detailBar from '../../components/detail-bar.vue';
 	import uniNumberBox from '../../components/uni-number-box.vue'
 	export default {
+		components: {
+			uniSegmentedControl,
+			uniPopup,
+			uniButtonControl,
+			detailBar,
+			uniNumberBox,
+		},
 		data() {
 			return {
 				items: [
@@ -193,13 +218,6 @@
 				duration: 1000,
 				showPopupGui:false,
 			}
-		},
-		components: {
-			uniSegmentedControl,
-			uniPopup,
-			uniButtonControl,
-			detailBar,
-			uniNumberBox,
 		},
 		methods: {
 			onClickItem(index) {
@@ -235,11 +253,33 @@
             .slide_swiper{
                 width: 750upx;
                 height: 734upx; 
-                .slide_image{
-                    width: 750upx;
-                    height: 734upx;
-                    background: #333;
-                } 
+                .info{
+                	text-align: right;
+                	margin-top: 650upx;
+                	vertical-align: middle;
+                	.collect{
+                		display: inline;
+                		margin-right: 20upx;
+                		border-radius: 30upx;
+                		padding:10upx 16upx;
+                		background: rgba($color: #000000, $alpha: .3);
+                		.collect_txt{
+                			font-size: 24upx;
+                			line-height: 24upx;
+                			color: #fff;
+                		}
+                	}
+                	.page{
+                		display: inline;
+                		margin-right: 50upx;
+                		border-radius: 30upx;
+                		padding:12upx 30upx;
+                		background: rgba($color: #000000, $alpha: .3);
+                		font-size: 24upx;
+                		line-height: 24upx;
+                		color: #fff;
+                	}
+                }
             }
             .des{
                 padding:40upx 22upx 30upx 22upx;
@@ -259,7 +299,7 @@
                 .post{
                     width:142upx; 
                     height: 28upx;
-                    font-size: 10upx!important;
+                    font-size: 22upx;
                     line-height: 26upx;
                     text-align: center;
                     border:3upx solid rgb(255, 0, 13);
@@ -713,7 +753,7 @@
 					float: right;
 				}
 			}
-			.bottoms{
+			.bottomss{
 				width: 750upx;
 				height: 100upx;
 				font-size: 24upx;
@@ -721,15 +761,19 @@
 				text-align: center;
 				overflow: hidden;
 				border-top: 1upx solid #f2f2f2;
-				.bottoms_cart{
+				.bottomss_cart{
 					float: left;
 					width: 375upx;
+					height: 100upx;
+					line-height: 100upx;
 					background: #fff;
 				}
-				.bottoms_buy{
+				.bottomss_buy{
 					float: left;
 					width: 375upx;
 					background: #D41C1C;
+					height: 100upx;
+					line-height: 100upx;
 					color:#fff;
 				}
 			}

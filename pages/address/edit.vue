@@ -17,7 +17,7 @@
 		</view>
 		<view class="bottom">
 			<label class="txt">
-				<radio value="r1" checked="true" />设置为默认地址
+				<radio value="r1" checked="true" color="red"/>设置为默认地址
 			</label>
 		</view>
 		<view class="delete">

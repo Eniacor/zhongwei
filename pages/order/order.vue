@@ -356,13 +356,13 @@
 					}
 
 					.middle_post {
-						font-size: 18upx;
+						font-size: 16upx;
 						color: #fff;
 						width: 50upx;
 						height: 26upx;
 						line-height: 26upx;
 						text-align: center;
-						background: #FFD944;
+						background: #D0DBFF;
 						border-radius: 6upx;
 						margin-top: 22upx;
 					}
