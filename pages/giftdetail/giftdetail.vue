@@ -630,7 +630,7 @@
 					top:80upx;
 					left:0upx;
 					padding-top:40upx;
-					padding-bottom:42upx;
+					padding-bottom:44upx;
 					background: #fff;
 					width: 750upx;
 					height: 106upx;
