@@ -120,6 +120,7 @@
 	.register {
 		margin-top:46upx;
 		margin-left:22upx;
+		vertical-align: middle;
 		text{
 			font-size:26upx;
 			line-height:26upx;

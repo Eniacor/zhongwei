@@ -877,7 +877,6 @@
 				background: #fff;
 				padding: 22upx 34upx 18upx 34upx;
 				border-top: 1upx solid #f2f2f2;
-
 				.gui_title {
 					font-size: 24upx;
 					line-height: 24upx;
