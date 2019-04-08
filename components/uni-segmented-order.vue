@@ -1,6 +1,6 @@
 <template>
-	<view class="segmented-control" :class="styleType" :style="wrapStyle">
-		<view v-for="(item, index) in values" class="segmented-control-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
+	<view class="segmented-order" :class="styleType" :style="wrapStyle">
+		<view v-for="(item, index) in values" class="segmented-order-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
 			{{item}}
 		</view>
 	</view>
@@ -46,7 +46,7 @@
 				let styleString = '';
 				switch (this.styleType) {
 					case 'text':
-						styleString = `border:0;`;
+						styleString = `border-color:0;`;
 						break;
 					default:
 						styleString = `border-color: ${this.activeColor}`;
@@ -84,6 +84,7 @@
 				if (this.currentIndex !== index) {
 					this.currentIndex = index;
 					this.$emit('clickItem', index);
+					console.log(index);
 				}
 			}
 		},
@@ -91,7 +92,7 @@
 </script>
 
 <style>
-	.segmented-control {
+	.segmented-order {
 		display: flex;
 		justify-content:space-around;
 		align-items: center;
@@ -99,12 +100,10 @@
 		height:82upx;
 		background: #fff;
 	}
-	.segmented-control-item {
+	.segmented-order-item {
 		display: inline;
-		padding-top:20upx;
-		padding-bottom:18upx;
-		padding-left: 0!important;
-		padding-right: 0!important;
+	 	padding-top:18upx;
+		padding-bottom:16upx;
 		font-size: 32upx;
 		line-height: 32upx;
 	}

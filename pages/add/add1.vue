@@ -27,7 +27,7 @@
 		line-height: 50upx;
 		color: rgb(79, 79, 79);
 		&:first-child{
-			margin-top: 184upx;
+			margin-top: 84upx;
 			margin-left: 58upx;
 		}
 		&:nth-child(2){

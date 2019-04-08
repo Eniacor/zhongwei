@@ -192,7 +192,8 @@
 		<view class="code">
 			<uni-popup :show="showPopupCode" type="middle" v-on:hidePopup="hidePopup">
 				<view class="popup_code">
-					<image class="code_ma"></image>
+					<image class="code_ma" src=""></image>
+					<image class="code_delete" src="../../static/close.png"></image>
 					<view class="code_title">长按保存二维码，使用微信</view>
 					<view class="code_title">添加代理商</view>
 				</view>
@@ -787,14 +788,25 @@
 		}
 	}
 	.code{
+		border-radius: 20upx;
 		.popup_code{
 			width: 642upx;
 			height: 582upx;
+			background: #fff;
+			position: relative;
+			border-radius: 20upx;
 			.code_ma{
 				width: 242upx;
 				height:242upx;
 				margin:104upx 200upx 52upx 200upx;
 				background: #333;
+			}
+			.code_delete{
+				position: absolute;
+				top:16upx;
+				right:16upx;
+				width:30upx;
+				height:30upx;
 			}
 			.code_title{
 				font-size: 38upx;
@@ -810,6 +822,7 @@
 			width: 644upx!important;
 			height: 580upx!important;
 			border-radius:30upx!important;
+			background: #fff;
 			.content_header{
 				text-align:right;
 				padding-top:28upx;

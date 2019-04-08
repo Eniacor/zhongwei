@@ -1,6 +1,6 @@
 <template>
-	<view class="segmented-control" :class="styleType" :style="wrapStyle">
-		<view v-for="(item, index) in values" class="segmented-control-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
+	<view class="segmented-add" :class="styleType" :style="wrapStyle">
+		<view v-for="(item, index) in values" class="segmented-add-item" :class="styleType" :key="index" :style="index === currentIndex ? activeStyle : itemStyle" @click="onClick(index)">
 			{{item}}
 		</view>
 	</view>
@@ -22,7 +22,7 @@
 			},
 			activeColor: {
 				type: String,
-				default: '#FFD944'
+				default: '#000'
 			},
 			styleType: {
 				type: String,
@@ -91,7 +91,7 @@
 </script>
 
 <style>
-	.segmented-control {
+	.segmented-add {
 		display: flex;
 		justify-content:space-around;
 		align-items: center;
@@ -100,33 +100,33 @@
 		background: rgb(255, 217, 68);
 	}
 
-	.segmented-control.text {
+	.segmented-add.text {
 		border: 0;
 		border-radius: 0upx;
 	}
 
 
-	.segmented-control-item {
+	.segmented-add-item {
 		display: inline;
-		padding-top:42upx;
-		padding-bottom:18upx;
+		padding-top:28upx;
+		padding-bottom:14upx;
 		padding-left: 0!important;
 		padding-right: 0!important;
 		font-size: 30upx;
 		line-height: 30upx;
 	}
 
-	.segmented-control-item.button {
+	.segmented-add-item.button {
 		border-left: 1upx solid;
 	}
 
-	.segmented-control-item.text {
+	.segmented-add-item.text {
 		border-left: 0;
 		font-size:30upx;
 		color:#666666;
 	}
 
-	.segmented-control-item:first-child {
+	.segmented-add-item:first-child {
 		border-left-width: 0;
 	}
 </style>

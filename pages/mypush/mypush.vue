@@ -1,6 +1,6 @@
 <template>
 	<view class="page">
-		<view class="top_header">
+		<view class="top_header" style="padding-left: 35upx;background: #fff;">
 			<custom-segmented-control 
 				:current="current" 
 				:values="items" 

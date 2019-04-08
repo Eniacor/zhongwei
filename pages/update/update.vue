@@ -115,8 +115,8 @@
 				width: 2upx;
 				height: 40upx;
 				background: #FF8136;
-				margin-left: 114upx;
-				margin-right: 100upx;
+				margin-left: 128upx;
+				margin-right:86upx;
 				margin-top:4upx;
 			}
 			.btn_update{

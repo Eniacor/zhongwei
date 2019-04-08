@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<view class="back">
-			<uni-segmented-control :current="current" :values="items" v-on:clickItem="onClickItem" styleType="text" activeColor="#000"></uni-segmented-control>
-			</uni-segmented-control>
+			<uni-segmented-add :current="current" :values="items" v-on:clickItem="onClickItem" styleType="text" activeColor="#000"></uni-segmented-control>
+			</uni-segmented-add>
 		</view>
 		<view class="content">
 			<view v-show="current === 0">
@@ -49,7 +49,7 @@
 </template>
 
 <script>
-	import uniSegmentedControl from '../../components/uni-segmented-add.vue';
+	import uniSegmentedAdd from '../../components/uni-segmented-add.vue';
 	export default {
 		data() {
 			return {
@@ -61,7 +61,7 @@
 			};
 		},
 		components: {
-			uniSegmentedControl,
+			uniSegmentedAdd,
 
 		},
 		methods: {

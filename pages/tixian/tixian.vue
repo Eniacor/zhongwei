@@ -10,7 +10,7 @@
 			<view class="balance_txt">元</view>
 		</view>
 		<view class="money">
-			<view class="money_txt">￥</view>
+			<view class="money_dot">￥</view>
 			<input class="money_value" value="12,100.00" />
 			<view class="money_txt">全部提现</view>
 		</view>
@@ -75,23 +75,18 @@
 		}
 	}
 	.money{
-		overflow: hidden;
+		display: flex;
 		width: 690upx;
 		margin: 0 auto;
 		margin-top:65upx;
 		padding-bottom:38upx;
 		border-bottom:1upx solid rgb(4, 148, 255);
 		.money_txt{
-			float: right;
+			width: 160upx;
 			font-size: 27upx;
-			// line-height: 36upx;
 			color: rgb(86,93, 105);
-			&:first-child{
-				float: left;
-			}
 		}
 		.money_value{
-			float: left;
 			font-size: 36upx;
 			line-height: 36upx;
 			color: rgb(86,93,105);

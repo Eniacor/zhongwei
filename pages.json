@@ -579,9 +579,22 @@
         },
         {
             "path" : "pages/tixian/success",
-            "style" : {
-                "navigationBarTitleText" : "提现"
-            }
+			"style" : {
+			    "navigationBarTitleText" : "提现",
+			    "app-plus": {
+			        "bounce": "none",
+			        "titleNView": {
+			            "buttons": [ 
+			                {
+			                    "text": "明细", 
+			                    "fontSize":"14",
+			                    "float": "right",
+			                    "color":"#222"
+			                }
+			            ]
+			        }
+			    }
+			}
         },
         {
             "path" : "pages/tixian/detail",
